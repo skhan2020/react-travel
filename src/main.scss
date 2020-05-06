@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.app {
+    flex: 2;
+    width: 100%;
+    background-image: url('./assets/copenhagen-3966077_1920.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    font-family: sans-serif;
+    min-height: 1000px;
+}
+
+@media (max-width: 1000px) {
+    .app {
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 0px;
+            min-height: 800px;
+        }
+    }
+}

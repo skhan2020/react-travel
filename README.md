@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Travel Query Application 
 
-## Available Scripts
+This is a SPA that takes in a location and a date and lets the user know the weather for that particular place during the time entered.
 
-In the project directory, you can run:
+## Tools used
 
-### `npm start`
+The application uses Redux for state management, fetch to get data from various REST APIs and React Router for navigation.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How does is work
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The application calls various APIs to pull weather information for the location entered by the user. 
 
-### `npm test`
+- If the date is within a week, most accurate weather information will be displayed. If the date is more than a week away, an estimated weather forecast is displayed based on past weather information around that time.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- If available, a picture of the location is also displayed.
 
-### `npm run build`
+- Extras:
+  * The application allows the user to clear the trip.
+  * Pulls in an image for the country from Pixabay API when the entered location fails to brings up results. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to use the application
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Users will need to put in a date and a location to retrieve data. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Both place and date needs to be filled
+* Date will be validated for correct format.
+* Date needs to be in the future.
 
-### `npm run eject`
+## Application dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  To run the application:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    * open another terminal and do `npm run start`
+    * Go to the browser and open `localhost:3000` and you should see the application

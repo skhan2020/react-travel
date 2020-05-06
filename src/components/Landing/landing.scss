@@ -1,0 +1,132 @@
+.main{
+    background: rgba(36, 38, 41, 0.6);
+    width: 75%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    form {
+        font-size: 15px;
+        padding: 50px;
+        padding-top: 80px;
+        /*  Basic Styling To Override Default For Basic HTML Elements */
+        label{
+            display:block;
+            height: 43px;
+            line-height: 43px;
+            color: white;
+            background-color: black;
+            width: 100px;
+            min-width: 76px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        input{
+            min-width: 100px;
+            font-size: 15px;
+            height: 40px;
+            width: 250px;
+            background: #F0FAFA;
+            font-family: sans-serif;
+            border-style: solid;
+            border-width: thin;
+            border-color: #000000;
+            display: inline-block;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        .buttonBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        button{
+            font-size: 15px;
+            margin-top: 50px;
+            margin-left: 10px;
+            width: 170px;
+            height: 43px;
+            min-width: 76px;
+            background-color: #000000;
+            font-family: sans-serif;
+            border: none;
+            box-shadow: 2px 4px 5px #444;
+            color: white;
+            cursor: pointer;
+            &:hover {
+                background-color: #252930;
+                border-style: solid;
+                border-width: thin;
+                border-color: rgb(129, 162, 194);
+            }
+        }
+    }
+
+    .holder{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .main{
+        background: rgba(36, 38, 41, 0.6);
+        width: 75%;
+        min-height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .content {
+        padding-top: 15px;
+        color: #d5ebeb;
+    }
+
+    .title{
+        padding: 20px;
+        text-decoration: underline;
+    }
+    /* Reset style for HTML element on active to have no border*/
+    input:focus,
+    button:focus {
+        outline: none;
+    }
+    .placeImage {
+        line-height: 35px;
+        text-align: left;
+        padding-top: 20px;
+        margin-top: 50px;
+        min-height: 100px;
+        background-image: url('../../assets/photographer-407068_640.jpg'); 
+        background-size: cover;
+        background-position: center;
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0px;
+        min-height: 800px;
+
+        .placeImage {
+            margin-left: auto;
+            margin-right: auto;
+            width: 220px;
+            height: 160px;
+        }
+        form {
+            padding-top: 30px;
+            padding-bottom: 5px;
+        }
+    }
+  }
