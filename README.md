@@ -30,5 +30,5 @@ Users will need to put in a date and a location to retrieve data.
 
   To run the application:
 
-    * open another terminal and do `npm run start`
+    * Open a terminal and do `npm run start`
     * Go to the browser and open `localhost:3000` and you should see the application
