@@ -26,9 +26,7 @@ Users will need to put in a date and a location to retrieve data.
 * Date will be validated for correct format.
 * Date needs to be in the future.
 
-## Application dependencies:
-
-  To run the application:
+## To run the application:
 
     * Open a terminal and do `npm run start`
     * Go to the browser and open `localhost:3000` and you should see the application
